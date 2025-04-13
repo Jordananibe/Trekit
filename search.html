@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TREKIT/search</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fontawesome-free-6.5.2-web/css/all.css">
+    <link rel="shortcut icon" href="images/trekitlogofavicon2.png" type="image/x-icon">
+    <!-- Leaflet CSS & JS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+</head>
+<body>
+    <!--Search Header-->
+    <header class="searchmainheader">
+        <label for="navbar" class="navbar"><i class="fa-solid fa-bars"></i></label>
+        <div class="searchlogo"><img src="images/trekitlogo.png" alt="">
+            <h2>TREKIT</h2>
+        </div>        
+        <p>Navigate your way seamlessly on campus...</p>
+    </header>
+    <!--Search Main Body-->
+    <section class="searchbody" id="searchbody">
+        <input type="checkbox" name="navbar" id="navbar">
+        <label for="navbar" class="navcover"></label>
+        <!--Search Navigation-->
+        <nav class="searchnav">
+            <label for="navbar" class="navbarx"><i class="fa-solid fa-x"></i></label>
+            <a href="index.html"><i class="fa-solid fa-home"></i><span>Home</span></a>            
+            <a href="map.html"><i class="fa-solid fa-location"></i><span>Map</span></a>
+            <a href="search.html" style="background-color: white;"><i class="fa-solid fa-search"></i><span>Search</span></a>            
+            <a href="faculties.html"><i class="fa-solid fa-building"></i><span>Faculties</span></a>
+            <a href="about.html"><i class="fa-solid fa-circle-info"></i><span>About</span></a>
+        </nav>
+        <!--Search Main Content-->
+        <div class="searchmaincontent">
+            <!--Search box-->
+            <div class="searchdiv">
+                <h2><i class="fa-solid fa-placeholder"></i>Find your way around on campus</h2>
+                <div class="searchtool">                    
+                    <input type="search" name="search" id="search" placeholder="Where do you want to go...">
+                    <a href="map.html" id="searchoption"></a>
+                    <button onclick="searchmap()">Search</button>
+                </div>
+                <a href="map.html">View Map</a>
+            </div>
+            <h1 class="searchshowtext">Recent Searches</h1>
+            <!--Recent searches-->
+            <div class="recsearch">
+                <button class="rCard rs1">
+                    <div class="img LT2"></div>
+                    <div class="text">
+                        <h3>LT2 Building<p>Location</p></h3>                        
+                        <h5><i class="fa-solid fa-location"></i></h5>
+                    </div>
+                </button>
+                <button class="rCard rs2">
+                    <div class="img clinic"></div>
+                    <div class="text">
+                        <h3>School Clinic<p>Location</p></h3>
+                        <h5><i class="fa-solid fa-location"></i></h5>                        
+                    </div>
+                </button>
+                <button class="rCard rs3">
+                    <div class="img engineering"></div>
+                    <div class="text">
+                        <h3>Engineering Complex<p>Location</p></h3>
+                        <h5><i class="fa-solid fa-location"></i></h5>                        
+                    </div>
+                </button>
+                <button class="rCard rs4">
+                    <div class="img sport"></div>
+                    <div class="text">
+                        <h3>Sport Complex<p>Location</p></h3>
+                        <h5><i class="fa-solid fa-location"></i></h5>                        
+                    </div>
+                </button>
+            </div>
+            <h1 class="searchshowtext">Other Faculties & Buildings</h1>
+            <!--Other Faculties-->
+            <div class="OtFaBu">
+                <a href="faculties.html" class="oCard 1">
+                    <div class="img senate"></div>
+                    <div class="text">
+                        <h3>Senate Building<p>Location</p></h3>                        
+                        <h5><i class="fa-solid fa-location"></i></h5>
+                    </div>
+                </a>
+                <a href="faculties.html" class="oCard 2">
+                    <div class="img sict"></div>
+                    <div class="text">
+                        <h3>SICT Building<p>Location</p></h3>
+                        <h5><i class="fa-solid fa-location"></i></h5>                        
+                    </div>
+                </a>
+            </div>
+            
+        </div>
+    </section>
+
+    <footer>
+        <div><img src="images/trekitlogo.png" alt="">
+            <h2>TREKIT</h2>
+        </div>
+        <p>Copyright &copy; 2025.<br/><span style="text-decoration: line-through; font-style: italic; font-size: .8rem;">Designed by Prime Spark</span></p> 
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+<!--
+<!--Search Header--
+<header class="searchmainheader">
+    <label for="navbar" class="navbar"><i class="fa-solid fa-bars"></i></label>
+    <div class="searchlogo"><img src="images/trekitlogo.png" alt="">
+        <h2>TREKIT</h2>
+    </div>        
+    <p>Navigate your way seamlessly on campus...</p>
+</header>
+<!--Search Main Body--
+<section class="searchbody" id="searchbody">
+    <input type="checkbox" name="navbar" id="navbar">
+    <label for="navbar" class="navcover"></label>
+    <!--Search Navigation--
+    <nav class="searchnav">
+        <label for="navbar" class="navbarx"><i class="fa-solid fa-x"></i></label>
+        <a href="index.html"><i class="fa-solid fa-home"></i><span>Home</span></a>            
+        <a href="map.html"><i class="fa-solid fa-location"></i><span>Map</span></a>
+        <a href="search.html" style="background-color: white;"><i class="fa-solid fa-search"></i><span>Search</span></a>            
+        <a href="faculties.html"><i class="fa-solid fa-building"></i><span>Faculties</span></a>
+        <a href="about.html"><i class="fa-solid fa-circle-info"></i><span>About</span></a>
+    </nav>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>TREKIT/search</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="fontawesome-free-6.5.2-web/css/all.css">
+  <link rel="shortcut icon" href="images/trekitlogofavicon2.png" type="image/x-icon">
+
+  <!-- Leaflet CSS --
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <!-- Routing plugin CSS --
+  <link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine/dist/leaflet-routing-machine.css"/>
+  <!-- Geocoder CSS --
+  <link rel="stylesheet" href="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css"/>
+
+  <style>
+    #map {
+      height: 400px;
+      width: 100%;
+      margin: 1rem auto;
+    }
+    .searchtool button {
+      margin-left: 10px;
+    }
+    #bookmarks {
+      max-width: 800px;
+      margin: 1rem auto;
+      padding: 1rem;
+      background: #f0f0f0;
+      border-radius: 10px;
+    }
+    #bookmarks h3 {
+      margin-bottom: 0.5rem;
+    }
+    .bookmark-item {
+      cursor: pointer;
+      margin: 0.3rem 0;
+      color: blue;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <!-- HEADER AND NAV REMAIN SAME --
+   <!--Search Header--
+    <header class="searchmainheader">
+        <label for="navbar" class="navbar"><i class="fa-solid fa-bars"></i></label>
+        <div class="searchlogo"><img src="images/trekitlogo.png" alt="">
+            <h2>TREKIT</h2>
+        </div>        
+        <p>Navigate your way seamlessly on campus...</p>
+    </header>
+    <!--Search Main Body--
+    <section class="searchbody" id="searchbody">
+        <input type="checkbox" name="navbar" id="navbar">
+        <label for="navbar" class="navcover"></label>
+        <!--Search Navigation--
+        <nav class="searchnav">
+            <label for="navbar" class="navbarx"><i class="fa-solid fa-x"></i></label>
+            <a href="index.html"><i class="fa-solid fa-home"></i><span>Home</span></a>            
+            <a href="map.html"><i class="fa-solid fa-location"></i><span>Map</span></a>
+            <a href="search.html" style="background-color: white;"><i class="fa-solid fa-search"></i><span>Search</span></a>            
+            <a href="faculties.html"><i class="fa-solid fa-building"></i><span>Faculties</span></a>
+            <a href="about.html"><i class="fa-solid fa-circle-info"></i><span>About</span></a>
+        </nav>
+    <!-- Search Main Content --
+        <div class="searchmaincontent">
+            <!-- Search box --
+            <div class="searchdiv">
+            <h2><i class="fa-solid fa-placeholder"></i>Find your way around on campus</h2>
+            <div class="searchtool">
+                <input type="search" id="searchBox" placeholder="Where do you want to go...">
+                <button onclick="findRoute()">Search</button>
+            </div>
+            <a href="map.html">View Map</a>
+            </div>
+
+            <!-- Map Section --
+            <div id="map"></div>
+
+            <!-- Bookmarks Section --
+            <div id="bookmarks">
+            <h3>📌 Saved Bookmarks</h3>
+            <div id="bookmarkList"></div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div><img src="images/trekitlogo.png" alt="">
+        <h2>TREKIT</h2>
+        </div>
+        <p>Copyright &copy; 2025.<br/><span style="text-decoration: line-through; font-style: italic; font-size: .8rem;">Designed by Prime Spark</span></p> 
+    </footer>
+
+    <!-- Leaflet JS --
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <!-- Routing Plugin --
+    <script src="https://unpkg.com/leaflet-routing-machine/dist/leaflet-routing-machine.min.js"></script>
+    <!-- Geocoder Plugin --
+    <script src="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js"></script>
+
+    <script>
+        let map = L.map('map').setView([9.6075, 6.5228], 5); // FUT Minna default
+
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '&copy; OpenStreetMap contributors'
+        }).addTo(map);
+
+        let geocoder = L.Control.geocoder({
+        defaultMarkGeocode: false
+        }).on('markgeocode', function(e) {
+        const center = e.geocode.center;
+        map.setView(center, 16);
+        if (destinationMarker) map.removeLayer(destinationMarker);
+        destinationMarker = L.marker(center).addTo(map).bindPopup(e.geocode.name).openPopup();
+        if (userLocation) createRoute(userLocation, center);
+        }).addTo(map);
+
+        let userMarker, destinationMarker, userLocation = null, control = null;
+
+        navigator.geolocation.getCurrentPosition(position => {
+        const lat = position.coords.latitude;
+        const lng = position.coords.longitude;
+        userLocation = L.latLng(lat, lng);
+        userMarker = L.marker(userLocation).addTo(map).bindPopup('You are here').openPopup();
+        map.setView(userLocation, 16);
+        }, () => {
+        alert('Location access denied. Enable it for full functionality.');
+        });
+
+        function createRoute(from, to) {
+        if (control) map.removeControl(control);
+        control = L.Routing.control({
+            waypoints: [from, to],
+            routeWhileDragging: false
+        }).addTo(map);
+        }
+
+        function findRoute() {
+        const query = document.getElementById('searchBox').value;
+        geocoder.options.geocoder.geocode(query, function(results) {
+            if (results.length > 0) {
+            const r = results[0];
+            map.setView(r.center, 16);
+            if (destinationMarker) map.removeLayer(destinationMarker);
+            destinationMarker = L.marker(r.center).addTo(map).bindPopup(r.name).openPopup();
+            if (userLocation) createRoute(userLocation, r.center);
+
+            saveBookmark(r.name, r.center);
+            } else {
+            alert("Location not found!");
+            }
+        });
+        }
+
+        function saveBookmark(name, coords) {
+        const saved = JSON.parse(localStorage.getItem("bookmarks") || "[]");
+        saved.push({ name, coords });
+        localStorage.setItem("bookmarks", JSON.stringify(saved));
+        renderBookmarks();
+        }
+
+        function renderBookmarks() {
+        const list = document.getElementById("bookmarkList");
+        list.innerHTML = '';
+        const bookmarks = JSON.parse(localStorage.getItem("bookmarks") || "[]");
+        bookmarks.forEach((b, index) => {
+            const item = document.createElement('div');
+            item.className = 'bookmark-item';
+            item.textContent = `${b.name}`;
+            item.onclick = () => {
+            const latlng = L.latLng(b.coords.lat, b.coords.lng);
+            map.setView(latlng, 16);
+            if (destinationMarker) map.removeLayer(destinationMarker);
+            destinationMarker = L.marker(latlng).addTo(map).bindPopup(b.name).openPopup();
+            if (userLocation) createRoute(userLocation, latlng);
+            };
+            list.appendChild(item);
+        });
+        }
+
+        // Load bookmarks on page load
+        window.onload = renderBookmarks;
+  </script>
+</body>
+</html>
+
+-->

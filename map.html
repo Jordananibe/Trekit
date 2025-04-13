@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TREKIT/map</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fontawesome-free-6.5.2-web/css/all.css">
+    <link rel="shortcut icon" href="images/trekitlogofavicon2.png" type="image/x-icon">
+</head>
+<body class="mapbody">
+    <header class="mapheader">
+        <div class="spacefill"></div>
+        <nav class="homenav">
+            <div class="logo"><img src="images/trekitlogo.png" alt="">
+                <h3>TREKIT</h3>
+            </div> 
+            <input type="checkbox" name="homenavbar" id="homenavbar">
+            <label for="homenavbar" class="homenavbar"><i class="fa-solid fa-bars"></i></label>
+            <label for="homenavbar" class="homenavcover"></label>           
+            <!--Home Navigation-->
+            <div class="homenavmenu">
+                <label for="homenavbar" class="homenavbarx"><i class="fa-solid fa-x"></i></label>
+                <a href="index.html">Home</a> 
+                <a href="map.html" style="background-color: white; color: #000078;">Map</a>           
+                <a href="search.html">Search</a>                
+                <a href="faculties.html">Faculties</a>
+                <a href="about.html">About</a>
+            </div>            
+        </nav>
+    </header>
+    <div class="themap">
+        <iframe frameborder="0" scrolling="yes" marginheight="0" marginwidth="0" id="gmap_canvas" src="https://maps.google.com/maps?width=520&amp;height=400&amp;hl=en&amp;q=gidan%20kwano%20Minna+(Federal%20University%20of%20Technology%20Minna%20Gidan%20Kwano)&amp;t=h&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe> 
+        <a href='https://www.acadoo.de/leistungen/ghostwriter-doktorarbeit/'>Doktorarbeit schreiben Unterstützung</a> 
+        <script type='text/javascript' src='https://embedmaps.com/google-maps-authorization/script.js?id=d68acd116ac8825e21e143c9a61d01968e19c4e7'></script>
+    </div>
+    <footer>
+        <div><img src="images/trekitlogo.png" alt="">
+            <h2>TREKIT</h2>
+        </div>
+        <p>Copyright &copy; 2025.<br/><span style="text-decoration: line-through; font-style: italic; font-size: .8rem;">Designed by Prime Spark</span></p> 
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

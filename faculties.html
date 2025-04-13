@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TREKIT/faculties</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fontawesome-free-6.5.2-web/css/all.css">
+    <link rel="shortcut icon" href="images/trekitlogofavicon2.png" type="image/x-icon">
+</head>
+<body>
+    <header class="searchmainheader">
+        <label for="navbar" class="navbar"><i class="fa-solid fa-bars"></i></label>
+        <div class="searchlogo"><img src="images/trekitlogo.png" alt="">
+            <h2>TREKIT</h2>
+        </div>        
+        <p>Navigate your way seamlessly on campus...</p>
+    </header>
+    <!--Search Main Body-->
+    <section class="searchbody" id="searchbody">
+        <input type="checkbox" name="navbar" id="navbar">
+        <label for="navbar" class="navcover"></label>
+        <!--Search Navigation-->
+        <nav class="searchnav">
+            <label for="navbar" class="navbarx"><i class="fa-solid fa-x"></i></label>
+            <a href="index.html"><i class="fa-solid fa-home"></i><span>Home</span></a>            
+            <a href="map.html"><i class="fa-solid fa-location"></i><span>Map</span></a>
+            <a href="search.html"><i class="fa-solid fa-search"></i><span>Search</span></a>            
+            <a href="faculties.html" style="background-color: white;"><i class="fa-solid fa-building"></i><span>Faculties</span></a>
+            <a href="about.html"><i class="fa-solid fa-circle-info"></i><span>About</span></a>
+        </nav>
+        <section class="facultiescontent">
+            <h1>Faculties</h1>
+            <button class="facultycard" onclick='showCard()'>
+                <img src="images/SenateBuilding.jpeg" alt="">
+                <p><strong>Senate</strong><br/><span>Tap to view</span></p>
+            </button>
+            <button class="facultycard" onclick='showCard()'>
+                <img src="images/Engineering.jpeg" alt="">
+                <p><strong>SEET & SIPET</strong><br/><span>Tap to view</span></p>
+            </button>
+            <button class="facultycard" onclick='showCard()'>
+                <img src="images/SICT.jpeg" alt="">
+                <p><strong>SICT</strong><br/><span>Tap to view</span></p>
+            </button>
+            <button class="facultycard" onclick='showCard()'>
+                <img src="images/Environmental.jpeg" alt="">
+                <p><strong>SET</strong><br/><span>Tap to view</span></p>
+            </button>
+            <button class="facultycard" onclick='showCard()'>
+                <img src="images/SAAT.jpeg" alt="">
+                <p><strong>SAAT</strong><br/><span>Tap to view</span></p>
+            </button>
+            <button class="facultycard" onclick='showCard()'>
+                <img src="images/SPS.jpeg" alt="">
+                <p><strong>SPS</strong><br/><span>Tap to view</span></p>
+            </button>
+            <button class="facultycard" onclick='showCard()'>
+                <img src="images/SLS2.jpeg" alt="">
+                <p><strong>SLS</strong><br/><span>Tap to view</span></p>
+            </button>
+            <button class="facultycard" onclick='showCard()'>
+                <img src="images/SIT.jpeg" alt="">
+                <p><strong>SIT</strong><br/><span>Tap to view</span></p>
+            </button>
+            <button class="facultycard" onclick='showCard()'>
+                <img src="images/SchoolClinic.jpeg" alt="">
+                <p><strong>School Clinic</strong><br/><span>Tap to view</span></p>
+            </button>
+            <button class="facultycard" onclick='showCard()'>
+                <img src="images/EntrepreneurshipCentre.jpeg" alt="">
+                <p><strong>Entrepreneurship Centre</strong><br/><span>Tap to view</span></p>
+            </button>
+            <button class="facultycard" onclick='showCard()'>
+                <img src="images/Library.jpeg" alt="">
+                <p><strong>Library</strong><br/><span>Tap to view</span></p>
+            </button>
+            <button class="facultycard" onclick='showCard()'>
+                <img src="images/LT2.jpeg" alt="">
+                <p><strong>LT2</strong><br/><span>Tap to view</span></p>
+            </button>
+            <button class="facultycard" onclick='showCard()'>
+                <img src="images/ITS.jpeg" alt="">
+                <p><strong>ITS</strong><br/><span>Tap to view</span></p>
+            </button>
+            <button class="facultycard" onclick='showCard()'>
+                <img src="images/ConvoSquare.jpeg" alt="">
+                <p><strong>Convo Square</strong><br/><span>Tap to view</span></p>
+            </button>
+            <button class="facultycard" onclick='showCard()'>
+                <img src="images/SportComplex.jpeg" alt="">
+                <p><strong>Sport Complex</strong><br/><span>Tap to view</span></p>
+            </button>
+        </section>
+    </section>
+    <button class="closefacdet" id="closefacdet" onclick='showCard()'><i class="fa-solid fa-x"></i></button>
+    <div class="backcover" id="backcover">
+        <div class="facultydetails" id="facultydetails">        
+            <img src="" alt="">
+            <h1></h1>
+            <p><strong>Description:</strong><br/>
+                <span></span>
+            </p>
+            <p><strong>Departments:</strong>
+                <ul></ul>
+            </p>
+        </div>
+    </div>
+    <footer>
+        <div><img src="images/trekitlogo.png" alt="">
+            <h2>TREKIT</h2>
+        </div>
+        <p>Copyright &copy; 2025.<br/><span style="text-decoration: line-through; font-style: italic; font-size: .8rem;">Designed by Prime Spark</span></p> 
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
